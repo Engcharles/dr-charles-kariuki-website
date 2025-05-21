@@ -1,225 +1,260 @@
 <!DOCTYPE html>
-     <html lang="en">
-     <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Dr. Charles Kariuki - Motivational Books, Coaching & Courses</title>
-         <script src="https://cdn.tailwindcss.com"></script>
-         <style>
-             .smooth-scroll {
-                 scroll-behavior: smooth;
-             }
-             .book-card, .course-card {
-                 transition: transform 0.3s ease;
-             }
-             .book-card:hover, .course-card:hover {
-                 transform: scale(1.05);
-             }
-             .hero-bg {
-                 background: linear-gradient(to right, #1a202c, #2d3748);
-             }
-         </style>
-     </head>
-     <body class="font-sans text-gray-800 smooth-scroll">
-         <!-- Header -->
-         <header class="bg-white shadow sticky top-0 z-50">
-             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-                 <img src="logo.png" alt="Dr. Charles Kariuki Logo" class="h-16">
-                 <nav>
-                     <ul class="flex space-x-6">
-                         <li><a href="#home" class="text-gray-700 hover:text-blue-600">Home</a></li>
-                         <li><a href="#books" class="text-gray-700 hover:text-blue-600">Books</a></li>
-                         <li><a href="#coaching" class="text-gray-700 hover:text-blue-600">Coaching</a></li>
-                         <li><a href="#courses" class="text-gray-700 hover:text-blue-600">Courses</a></li>
-                         <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
-                         <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
-                     </ul>
-                 </nav>
-             </div>
-         </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Charles Kariuki - Motivational Books, Coaching & Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .book-card, .course-card {
+            transition: transform 0.3s ease;
+        }
+        .book-card:hover, .course-card:hover {
+            transform: scale(1.05);
+        }
+        .hero-bg {
+            background: linear-gradient(to right, #1a202c, #2d3748);
+        }
+        .carousel {
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-item {
+            flex: 0 0 auto;
+            width: 33.33%;
+            padding: 0 1rem;
+        }
+        @media (max-width: 768px) {
+            .carousel-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 smooth-scroll">
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <img src="Dr Charles Kariuki Logo.png" alt="Dr. Charles Kariuki Logo" class="h-16">
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                    <li><a href="#books" class="text-gray-700 hover:text-blue-600">Books</a></li>
+                    <li><a href="#coaching" class="text-gray-700 hover:text-blue-600">Coaching</a></li>
+                    <li><a href="#courses" class="text-gray-700 hover:text-blue-600">Courses</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-         <!-- Hero Section -->
-         <section id="home" class="hero-bg text-white py-20">
-             <div class="container mx-auto px-4 text-center">
-                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Transform Your Life with Dr. Charles Kariuki</h1>
-                 <p class="text-lg md:text-xl mb-6">Discover over 100 motivational books, life coaching, and courses to unlock your potential.</p>
-                 <a href="#books" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Explore Books</a>
-             </div>
-         </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Transform Your Life with Dr. Charles Kariuki</h1>
+            <p class="text-lg md:text-xl mb-6">Discover over 100 motivational books, life coaching, and courses to unlock your potential.</p>
+            <a href="#books" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Explore Books</a>
+        </div>
+    </section>
 
-         <!-- Featured Book Section -->
-         <section id="featured-book" class="py-16 bg-gray-100">
-             <div class="container mx-auto px-4">
-                 <h2 class="text-3xl font-bold text-center mb-8">Featured Book: Breaking the Mold</h2>
-                 <div class="flex flex-col md:flex-row items-center">
-                     <div class="md:w-1/2 flex justify-center space-x-4 mb-8 md:mb-0">
-                         <img src="breaking-the-mold-front.jpg" alt="Breaking the Mold Front Cover" class="w-48 shadow-lg">
-                         <img src="breaking-the-mold-back.jpg" alt="Breaking the Mold Back Cover" class="w-48 shadow-lg">
-                     </div>
-                     <div class="md:w-1/2">
-                         <h3 class="text-2xl font-semibold mb-4">Breaking the Mold: Navigating the Challenges of Being a Kenyan Man</h3>
-                         <p class="text-gray-700 mb-4">In a world of stereotypes and societal pressures, *Breaking the Mold* is your guide to redefining manhood. Dr. Charles Kariuki draws on decades of experience to deliver practical strategies for Kenyan men to overcome challenges, build resilience, and lead with purpose. This book is a must-read for any man seeking to rise above expectations and forge his own path.</p>
-                         <ul class="list-disc list-inside text-gray-700 mb-4">
-                             <li>Learn to navigate cultural expectations with confidence.</li>
-                             <li>Discover strategies to build emotional and mental strength.</li>
-                             <li>Practical exercises to redefine success on your terms.</li>
-                         </ul>
-                         <a href="https://gumroad.com/l/breaking-the-mold" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Buy Now on Gumroad</a>
-                     </div>
-                 </div>
-             </div>
-         </section>
+    <!-- Featured Book Section -->
+    <section id="featured-book" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Featured Book: Digital Kid Dominator</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 flex justify-center space-x-4 mb-8 md:mb-0">
+                    <img src="Digital Kid Dominator Front Cover.png" alt="Digital Kid Dominator Front Cover" class="w-48 shadow-lg">
+                    <img src="Digital Kid Dominator Back Cover.png" alt="Digital Kid Dominator Back Cover" class="w-48 shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Digital Kid Dominator: Empowering the Next Generation</h3>
+                    <p class="text-gray-700 mb-4">In *Digital Kid Dominator*, Dr. Charles Kariuki provides parents and educators with practical strategies to guide children through the digital age. This book offers insights on balancing screen time, fostering digital literacy, and nurturing resilience in young minds.</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>Learn to guide children in responsible technology use.</li>
+                        <li>Discover methods to promote digital literacy and safety.</li>
+                        <li>Practical tips for building emotional resilience in kids.</li>
+                    </ul>
+                    <a href="https://gumroad.com/l/digital-kid-dominator" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Buy Now on Gumroad</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-         <!-- eBooks Grid Section -->
-         <section id="books" class="py-16">
-             <div class="container mx-auto px-4">
-                 <h2 class="text-3xl font-bold text-center mb-8">Explore More Books</h2>
-                 <div id="ebooks-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                     <!-- Books will be populated by JavaScript -->
-                 </div>
-                 <div class="text-center mt-8">
-                     <button id="load-more" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Load More</button>
-                 </div>
-             </div>
-         </section>
+    <!-- eBooks Carousel Section -->
+    <section id="books" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Explore More Books</h2>
+            <div class="carousel">
+                <div id="books-carousel" class="carousel-inner">
+                    <!-- Books will be populated by JavaScript -->
+                </div>
+                <button id="books-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full">←</button>
+                <button id="books-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full">→</button>
+            </div>
+        </div>
+    </section>
 
-         <!-- Testimonials Section -->
-         <section id="testimonials" class="py-16 bg-gray-50">
-             <div class="container mx-auto px-4">
-                 <h2 class="text-3xl font-bold text-center mb-8">What Readers Are Saying</h2>
-                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                     <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-                         <p class="text-gray-700 italic mb-4">"*The Lion Mindset* completely changed how I approach challenges. I went from feeling stuck to launching my own business within months. Dr. Kariuki’s insights are a game-changer!"</p>
-                         <p class="font-semibold">— James M., Entrepreneur</p>
-                     </div>
-                     <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-                         <p class="text-gray-700 italic mb-4">"After reading *Unlearning Toxic Love*, I found the courage to leave a harmful relationship and rebuild my self-esteem. This book saved me."</p>
-                         <p class="font-semibold">— Sarah K., Teacher</p>
-                     </div>
-                     <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-                         <p class="text-gray-700 italic mb-4">"*Empowered Parenting* gave me practical tools to connect with my kids. My family is stronger and happier because of Dr. Kariuki’s wisdom."</p>
-                         <p class="font-semibold">— Michael O., Father of Three</p>
-                     </div>
-                 </div>
-             </div>
-         </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">What Readers Are Saying</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <p class="text-gray-700 italic mb-4">"*The Lion Mindset* completely changed how I approach challenges. I went from feeling stuck to launching my own business within months. Dr. Kariuki’s insights are a game-changer!"</p>
+                    <p class="font-semibold">— James M., Entrepreneur</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <p class="text-gray-700 italic mb-4">"After reading *Unlearning Toxic Love*, I found the courage to leave a harmful relationship and rebuild my self-esteem. This book saved me."</p>
+                    <p class="font-semibold">— Sarah K., Teacher</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <p class="text-gray-700 italic mb-4">"*Empowered Parenting* gave me practical tools to connect with my kids. My family is stronger and happier because of Dr. Kariuki’s wisdom."</p>
+                    <p class="font-semibold">— Michael O., Father of Three</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-         <!-- Life Coaching Section -->
-         <section id="coaching" class="py-16 bg-gray-100">
-             <div class="container mx-auto px-4">
-                 <h2 class="text-3xl font-bold text-center mb-8">Life Coaching with Dr. Charles Kariuki</h2>
-                 <p class="text-gray-700 max-w-3xl mx-auto mb-6">Transform your life through personalized coaching. Dr. Charles Kariuki offers expert guidance on a range of personal development topics to help you achieve your goals and unlock your potential.</p>
-                 <ul class="list-disc list-inside text-gray-700 max-w-3xl mx-auto mb-8">
-                     <li>Goal Setting & Achievement: Create actionable plans to turn your dreams into reality.</li>
-                     <li>Emotional Resilience: Build mental strength to overcome life’s challenges.</li>
-                     <li>Leadership Development: Enhance your ability to lead with confidence and purpose.</li>
-                     <li>Relationship Building: Foster healthier, more meaningful connections.</li>
-                     <li>Self-Confidence & Mindset: Develop a winning mindset to conquer self-doubt.</li>
-                 </ul>
-                 <div class="text-center">
-                     <h3 class="text-2xl font-semibold mb-4">Book Your Coaching Session</h3>
-                     <div class="calendly-inline-widget" data-url="https://calendly.com/drcharleskariuki/coaching-session" style="min-width:320px;height:630px;"></div>
-                     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                 </div>
-             </div>
-         </section>
+    <!-- Life Coaching Section -->
+    <section id="coaching" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Life Coaching with Dr. Charles Kariuki</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto mb-6">Transform your life through personalized coaching. Dr. Charles Kariuki offers expert guidance on a range of personal development topics to help you achieve your goals and unlock your potential.</p>
+            <ul class="list-disc list-inside text-gray-700 max-w-3xl mx-auto mb-8">
+                <li>Goal Setting & Achievement: Create actionable plans to turn your dreams into reality.</li>
+                <li>Emotional Resilience: Build mental strength to overcome life’s challenges.</li>
+                <li>Leadership Development: Enhance your ability to lead with confidence and purpose.</li>
+                <li>Relationship Building: Foster healthier, more meaningful connections.</li>
+                <li>Self-Confidence & Mindset: Develop a winning mindset to conquer self-doubt.</li>
+            </ul>
+            <div class="text-center">
+                <h3 class="text-2xl font-semibold mb-4">Book Your Coaching Session</h3>
+                <div class="calendly-inline-widget" data-url="https://calendly.com/drcharleskariuki/coaching-session" style="min-width:320px;height:630px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </div>
+    </section>
 
-         <!-- Courses Section -->
-         <section id="courses" class="py-16">
-             <div class="container mx-auto px-4">
-                 <h2 class="text-3xl font-bold text-center mb-8">Personal Development Courses</h2>
-                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                     <div class="course-card bg-white shadow-lg rounded-lg p-6 text-center">
-                         <h3 class="text-xl font-semibold mb-2">Mastering Your Mindset</h3>
-                         <p class="text-gray-700 mb-4">Learn to harness the power of your subconscious mind to achieve lasting success. This course includes practical exercises to rewire limiting beliefs and build unshakable confidence.</p>
-                         <a href="https://gumroad.com/l/mastering-mindset" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Enroll Now</a>
-                     </div>
-                     <div class="course-card bg-white shadow-lg rounded-lg p-6 text-center">
-                         <h3 class="text-xl font-semibold mb-2">The Art of Resilience</h3>
-                         <p class="text-gray-700 mb-4">Discover strategies to bounce back from setbacks and thrive in adversity. This course offers tools to build emotional strength and maintain positivity in tough times.</p>
-                         <a href="https://gumroad.com/l/art-of-resilience" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Enroll Now</a>
-                     </div>
-                     <div class="course-card bg-white shadow-lg rounded-lg p-6 text-center">
-                         <h3 class="text-xl font-semibold mb-2">Leadership Unleashed</h3>
-                         <p class="text-gray-700 mb-4">Unlock your leadership potential with this course designed to enhance decision-making, communication, and team-building skills for personal and professional growth.</p>
-                         <a href="https://gumroad.com/l/leadership-unleashed" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Enroll Now</a>
-                     </div>
-                     <div class="course-card bg-white shadow-lg rounded-lg p-6 text-center">
-                         <h3 class="text-xl font-semibold mb-2">Building Lasting Relationships</h3>
-                         <p class="text-gray-700 mb-4">Learn the foundations of healthy relationships, from communication techniques to setting boundaries, in this course aimed at fostering deeper connections.</p>
-                         <a href="https://gumroad.com/l/building-relationships" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Enroll Now</a>
-                     </div>
-                 </div>
-             </div>
-         </section>
+    <!-- Courses Carousel Section -->
+    <section id="courses" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Personal Development Courses</h2>
+            <div class="carousel">
+                <div id="courses-carousel" class="carousel-inner">
+                    <!-- Courses will be populated by JavaScript -->
+                </div>
+                <button id="courses-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full">←</button>
+                <button id="courses-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full">→</button>
+            </div>
+        </div>
+    </section>
 
-         <!-- About Section -->
-         <section id="about" class="py-16 bg-gray-100">
-             <div class="container mx-auto px-4">
-                 <h2 class="text-3xl font-bold text-center mb-8">About Dr. Charles Kariuki</h2>
-                 <p class="text-gray-700 max-w-3xl mx-auto">Dr. Charles Kariuki is a renowned life coach, motivational speaker, and author with over two decades of experience. Having authored over 100 books on personal development, masculinity, relationships, and more, he inspires countless individuals to unlock their potential. His titles, such as *Breaking the Mold* and *The Lion Mindset*, offer practical tools for transformation. A passionate advocate for youth and men’s issues, Dr. Kariuki’s work as a trainer and team-building expert has empowered organizations worldwide.</p>
-             </div>
-         </section>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">About Dr. Charles Kariuki</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">Dr. Charles Kariuki is a renowned life coach, motivational speaker, and author with over two decades of experience. Having authored over 100 books on personal development, masculinity, relationships, and more, he inspires countless individuals to unlock their potential. His titles, such as *Digital Kid Dominator* and *The Lion Mindset*, offer practical tools for transformation. A passionate advocate for youth and men’s issues, Dr. Kariuki’s work as a trainer and team-building expert has empowered organizations worldwide.</p>
+        </div>
+    </section>
 
-         <!-- Footer -->
-         <footer id="contact" class="bg-gray-800 text-white py-8">
-             <div class="container mx-auto px-4 text-center">
-                 <p class="mb-4">Contact Dr. Charles Kariuki: <a href="mailto:info@drcharleskariuki.com" class="underline hover:text-blue-400">info@drcharleskariuki.com</a></p>
-                 <div class="flex justify-center space-x-4">
-                     <a href="#" class="hover:text-blue-400">Twitter</a>
-                     <a href="#" class="hover:text-blue-400">LinkedIn</a>
-                     <a href="#" class="hover:text-blue-400">Instagram</a>
-                 </div>
-                 <p class="mt-4">© 2025 Dr. Charles Kariuki. All rights reserved.</p>
-             </div>
-         </footer>
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">Contact Dr. Charles Kariuki: <a href="mailto:info@drcharleskariuki.com" class="underline hover:text-blue-400">info@drcharleskariuki.com</a></p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:text-blue-400">Twitter</a>
+                <a href="#" class="hover:text-blue-400">LinkedIn</a>
+                <a href="#" class="hover:text-blue-400">Instagram</a>
+            </div>
+            <p class="mt-4">© 2025 Dr. Charles Kariuki. All rights reserved.</p>
+        </div>
+    </footer>
 
-         <script>
-             // Expanded book data for easy updates
-             const books = [
-                 { title: "Forged in Fire: The Making of True Men", front: "forged-in-fire-front.jpg", back: "forged-in-fire-back.jpg", gumroad: "https://gumroad.com/l/forged-in-fire" },
-                 { title: "The Lion Mindset: Unleashing Your Inner Winner", front: "lion-mindset-front.jpg", back: "lion-mindset-back.jpg", gumroad: "https://gumroad.com/l/lion-mindset" },
-                 { title: "Empowered Parenting: Raising Confident Children", front: "empowered-parenting-front.jpg", back: "empowered-parenting-back.jpg", gumroad: "https://gumroad.com/l/empowered-parenting" },
-                 { title: "The Gift of Goodbye: Letting Go to Grow", front: "gift-of-goodbye-front.jpg", back: "gift-of-goodbye-back.jpg", gumroad: "https://gumroad.com/l/gift-of-goodbye" },
-                 { title: "Rise to the Top: Standing Out in a Crowded World", front: "rise-to-the-top-front.jpg", back: "rise-to-the-top-back.jpg", gumroad: "https://gumroad.com/l/rise-to-the-top" },
-                 { title: "Unlearning Toxic Love: A Guide to Healing", front: "unlearning-toxic-love-front.jpg", back: "unlearning-toxic-love-back.jpg", gumroad: "https://gumroad.com/l/unlearning-toxic-love" },
-             ];
+    <script>
+        // Book data
+        const books = [
+            { title: "Digital Kid Dominator: Empowering the Next Generation", front: "Digital Kid Dominator Front Cover.png", back: "Digital Kid Dominator Back Cover.png", gumroad: "https://gumroad.com/l/digital-kid-dominator" },
+            { title: "Forged in Fire: The Making of True Men", front: "forged-in-fire-front.jpg", back: "forged-in-fire-back.jpg", gumroad: "https://gumroad.com/l/forged-in-fire" },
+            { title: "The Lion Mindset: Unleashing Your Inner Winner", front: "lion-mindset-front.jpg", back: "lion-mindset-back.jpg", gumroad: "https://gumroad.com/l/lion-mindset" },
+            { title: "Empowered Parenting: Raising Confident Children", front: "empowered-parenting-front.jpg", back: "empowered-parenting-back.jpg", gumroad: "https://gumroad.com/l/empowered-parenting" },
+            { title: "The Gift of Goodbye: Letting Go to Grow", front: "gift-of-goodbye-front.jpg", back: "gift-of-goodbye-back.jpg", gumroad: "https://gumroad.com/l/gift-of-goodbye" },
+            { title: "Rise to the Top: Standing Out in a Crowded World", front: "rise-to-the-top-front.jpg", back: "rise-to-the-top-back.jpg", gumroad: "https://gumroad.com/l/rise-to-the-top" },
+            { title: "Unlearning Toxic Love: A Guide to Healing", front: "unlearning-toxic-love-front.jpg", back: "unlearning-toxic-love-back.jpg", gumroad: "https://gumroad.com/l/unlearning-toxic-love" },
+        ];
 
-             let displayedBooks = 0;
-             const booksPerPage = 3;
+        // Course data
+        const courses = [
+            { title: "Mastering Your Mindset", description: "Learn to harness the power of your subconscious mind to achieve lasting success. This course includes practical exercises to rewire limiting beliefs and build unshakable confidence.", gumroad: "https://gumroad.com/l/mastering-mindset" },
+            { title: "The Art of Resilience", description: "Discover strategies to bounce back from setbacks and thrive in adversity. This course offers tools to build emotional strength and maintain positivity in tough times.", gumroad: "https://gumroad.com/l/art-of-resilience" },
+            { title: "Leadership Unleashed", description: "Unlock your leadership potential with this course designed to enhance decision-making, communication, and team-building skills for personal and professional growth.", gumroad: "https://gumroad.com/l/leadership-unleashed" },
+            { title: "Building Lasting Relationships", description: "Learn the foundations of healthy relationships, from communication techniques to setting boundaries, in this course aimed at fostering deeper connections.", gumroad: "https://gumroad.com/l/building-relationships" },
+        ];
 
-             function displayBooks() {
-                 const grid = document.getElementById('ebooks-grid');
-                 const booksToShow = books.slice(displayedBooks, displayedBooks + booksPerPage);
-                 booksToShow.forEach(book => {
-                     const bookCard = document.createElement('div');
-                     bookCard.className = 'book-card bg-white shadow-lg rounded-lg p-4 text-center';
-                     bookCard.innerHTML = `
-                         <img src="${book.front}" alt="${book.title} Front Cover" class="w-32 mx-auto mb-4">
-                         <h3 class="text-xl font-semibold mb-2">${book.title}</h3>
-                         <a href="${book.gumroad}" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Buy Now</a>
-                     `;
-                     grid.appendChild(bookCard);
-                 });
-                 displayedBooks += booksPerPage;
-                 if (displayedBooks >= books.length) {
-                     document.getElementById('load-more').style.display = 'none';
-                 }
-             }
+        // Carousel functionality
+        function setupCarousel(containerId, items, prevBtnId, nextBtnId) {
+            const container = document.getElementById(containerId);
+            let currentIndex = 0;
 
-             // Load initial books
-             displayBooks();
+            // Populate carousel
+            items.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'carousel-item';
+                itemDiv.innerHTML = `
+                    <div class="book-card bg-white shadow-lg rounded-lg p-4 text-center">
+                        ${item.front ? `<img src="${item.front}" alt="${item.title} Front Cover" class="w-32 mx-auto mb-4">` : ''}
+                        <h3 class="text-xl font-semibold mb-2">${item.title}</h3>
+                        ${item.description ? `<p class="text-gray-700 mb-4">${item.description}</p>` : ''}
+                        <a href="${item.gumroad}" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Buy Now</a>
+                    </div>
+                `;
+                container.appendChild(itemDiv);
+            });
 
-             // Load more books on button click
-             document.getElementById('load-more').addEventListener('click', displayBooks);
+            // Navigation
+            const prevBtn = document.getElementById(prevBtnId);
+            const nextBtn = document.getElementById(nextBtnId);
 
-             // Smooth scrolling for navigation
-             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                 anchor.addEventListener('click', function (e) {
-                     e.preventDefault();
-                     document.querySelector(this.getAttribute('href')).scrollIntoView({
-                         behavior: 'smooth'
-                     });
-                 });
-             });
-         </script>
+            function updateCarousel() {
+                const offset = -currentIndex * 33.33;
+                container.style.transform = `translateX(${offset}%)`;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = Math.max(currentIndex - 1, 0);
+                updateCarousel();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = Math.min(currentIndex + 1, items.length - 3);
+                updateCarousel();
+            });
+
+            // Auto-scroll every 5 seconds
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % (items.length - 2);
+                updateCarousel();
+            }, 5000);
+        }
+
+        // Initialize carousels
+        setupCarousel('books-carousel', books, 'books-prev', 'books-next');
+        setupCarousel('courses-carousel', courses, 'courses-prev', 'courses-next');
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
